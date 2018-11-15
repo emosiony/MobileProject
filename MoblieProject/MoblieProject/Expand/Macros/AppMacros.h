@@ -317,24 +317,22 @@ return _instance; \
 
 #pragma mark -
 #pragma mark NSNumber
-
 /** int 转 NSNumber */
-#define kNUMBER_INT(intValue)        [NSNumber numberWithInt:intValue]
+#define kNUMBER_INT(intValue)           [NSNumber numberWithInt:intValue]
 /** float 转 NSNumber */
-#define kNUMBER_FLOAT(floatValue)    [NSNumber numberWithFloat:floatValue]
+#define kNUMBER_FLOAT(floatValue)       [NSNumber numberWithFloat:floatValue]
 /** double 转 NSNumber */
-#define kNUMBER_DOUBLE(doubleValue)   [NSNumber numberWithDouble:doubleValue]
+#define kNUMBER_DOUBLE(doubleValue)     [NSNumber numberWithDouble:doubleValue]
 /** bool 转 NSNumber */
-#define kNUMBER_BOOL(boolValue)      [NSNumber numberWithBool:boolValue]
+#define kNUMBER_BOOL(boolValue)         [NSNumber numberWithBool:boolValue]
 
 
 #pragma mark -
 #pragma mark NSString
-
-#define StringFormat(s)     [NSString stringWithFormat:@"%@",s]
-#define intToString(s)      [NSString stringWithFormat:@"%d",s]
-#define floatToString(s)    [NSString stringWithFormat:@"%f",s]
-#define doubleToString(s)   [NSString stringWithFormat:@"%lf",s]
-#define varString(var)      [NSString stringWithFormat:@"%s",#var]
+#define StringFormat(s)         [NSString stringWithFormat:@"%@",s]
+#define StringFromInt(s)        [NSString stringWithFormat:@"%d",s]
+#define StringFromFloat(s)      [NSString stringWithFormat:@"%f",s]
+#define StringFromDouble(s)     [NSString stringWithFormat:@"%lf",s]
+#define StringVar(var)          [NSString stringWithFormat:@"%s",#var]
 
 #endif /* AppMacros_h */

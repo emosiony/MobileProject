@@ -24,6 +24,8 @@
     _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     _window.backgroundColor = [UIColor whiteColor];
 
+    [[UIColor redColor] colorWithAlphaComponent:<#(CGFloat)#>]
+    
     [[AppComfig shareComfig] comfigApplistion];
     // 友盟注册
     [self initSocal];

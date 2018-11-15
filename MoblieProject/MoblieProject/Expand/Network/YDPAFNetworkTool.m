@@ -30,7 +30,7 @@
         
         // 超时
         [_manager.requestSerializer willChangeValueForKey:@"timeoutInterval"];
-        _manager.requestSerializer.timeoutInterval = 8.f;
+        _manager.requestSerializer.timeoutInterval = 30.0f;
         [_manager.requestSerializer didChangeValueForKey:@"timeoutInterval"];
     }
     return _manager;
